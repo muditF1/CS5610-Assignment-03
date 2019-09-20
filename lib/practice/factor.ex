@@ -1,5 +1,9 @@
 defmodule Practice.Factor do
 
+# The functionality is not 100% complete though the theory seem
+# reasonable to me, that's why you will see commented lines of
+# code in factor(n)
+
   def factor(n) do
     {num1, _} = Integer.parse(n)
     list = []
