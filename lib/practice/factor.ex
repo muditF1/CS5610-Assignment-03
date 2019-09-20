@@ -5,12 +5,14 @@ defmodule Practice.Factor do
     list = []
     primeList = []
     factor(num1,num1,list)
+    # Commenting out as the full implementation was not working
     # listLength = length(list)
     # prime(list,primelist,listLength)
     # IO.inspect primeList, label: "The list is"
     # prime(list,primeList)
   end
 
+  # Function to get the list of prime numbers from the factors list
   def prime(list,primeList,listLength) do
     [head | tail] = list
     maxCheck = div(head,2)
@@ -25,6 +27,7 @@ defmodule Practice.Factor do
     primeList
   end
 
+  # Function to get the list of all the factors of a given number
   def factor(num1, start, list) when start>0 do
         if rem(num1,start) == 0 do
           list = list ++ [start]
@@ -40,6 +43,7 @@ defmodule Practice.Factor do
     list
   end
 
+  # Function to check if a number is prime number or not
   def primeCheck(num, maxCheck, primeList) when maxCheck >=2 do
     # maxCheck = div(num, 2)
     if rem(num, maxCheck) == 0 do
