@@ -1,0 +1,55 @@
+defmodule Practice.Factor do
+
+  def factor(n) do
+    {num1, _} = Integer.parse(n)
+    list = []
+    primeList = []
+    factor(num1,num1,list)
+    # listLength = length(list)
+    # prime(list,primelist,listLength)
+    # IO.inspect primeList, label: "The list is"
+    # prime(list,primeList)
+  end
+
+  def prime(list,primeList,listLength) do
+    [head | tail] = list
+    maxCheck = div(head,2)
+    primeCheck(head,maxCheck,primeList)
+    list = tail
+    listLength = listLength - 1
+    prime(list,primeList,listLength)
+
+  end
+
+  def prime(list,primeList,listLength) when listLength == 1 do
+    primeList
+  end
+
+  def factor(num1, start, list) when start>0 do
+        if rem(num1,start) == 0 do
+          list = list ++ [start]
+          start = start - 1
+          factor(num1, start, list)
+        else
+          start = start - 1
+          factor(num1, start, list)
+    end
+  end
+
+  def factor(num1, start, list) when start == 0 do
+    list
+  end
+
+  def primeCheck(num, maxCheck, primeList) when maxCheck >=2 do
+    # maxCheck = div(num, 2)
+    if rem(num, maxCheck) == 0 do
+    else
+      maxCheck = maxCheck-1
+      primeCheck(num, maxCheck, primeList)
+    end
+  end
+
+  def primeCheck(num, maxCheck,primeList) when maxCheck == 1 do
+    primeList = primeList ++ [num]
+  end
+end
