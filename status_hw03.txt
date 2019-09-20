@@ -1,0 +1,42 @@
+Please fill in answers to the questions below:
+
+
+1. What's your name?
+Mudit Singh
+
+2. What hostname did you deploy to?
+www.muditsingh.online
+
+3. What's the URL of your git repo?
+https://github.com/muditF1/CS5610-Assignment-03
+
+4. How much of the functionality did you complete?
+75%
+
+5. Did you successfully deploy? If not, what's broken?
+Yes deployed.
+
+6. How comfortable do you feel with Elixir now?
+Not at all. No where near even understanding this launguage.
+I am finding it very tough to get the concepts epecially coming from
+a Java background. I think it will take good amount of time to even
+start deploying production stuff with this language. I have very low
+confidence on ramping up on this language in quick time.
+
+7. Which parts of this assignment did you have trouble with, if any?
+Setup was definetly a pain, there are too many unknows which we faced, like 502, deployment etc.
+
+Getting the logic of the implementation was easy, however, doing it with elixir was a total blind spot.
+With very little clue in terms of understanding the language and already written code. Had to put in
+huge amount of energy and effort, only to get this much done, it is inversely proportional. I think
+i will continue to face troubles with elixir given the design of our course.
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Task 4
+ - Task 5
+ - Task 6
+ - Task 7
+ - Task 8
