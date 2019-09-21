@@ -3,7 +3,6 @@
     <p><%= link "← go back", to: "/" %></p>
     <h2>Factor Results</h2>
     <p>Input String = <%= @x %></p>
-    <p>Result: <%= @y %></p>
+    <p>Factors: <%= for item <- @y do %> <%= item %> ,<% end %></p>
   </div>
 </div>
-
